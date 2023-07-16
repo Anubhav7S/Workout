@@ -146,19 +146,21 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_below="@+id/tilMetricUnitWeight"
         android:id="@+id/tilMetricUSUnitHeightInch"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_margin="10dp"
+        android:layout_below="@+id/tilMetricUnitWeight"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_toEndOf="@id/view"
         android:visibility="gone"
-        tools:visibility="visible"
         app:boxStrokeColor="@color/colorAccent"
         app:hintTextColor="@color/colorAccent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        tools:visibility="visible">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/etMetricUSUnitHeightInch"
@@ -166,7 +168,7 @@
             android:layout_height="wrap_content"
             android:hint="Inch"
             android:inputType="numberDecimal"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -223,17 +225,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/llDisplayBMIResults"
-        android:layout_margin="10dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorAccent"
         android:text="CALCULATE"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:backgroundTint="@color/colorAccent" />
-
-
-
-
-
-
+        android:textSize="18sp" />
 
 </RelativeLayout>
